@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  background-color: #ADD8E6;
+  margin:0;
+}
+
+/* Style for image*/
+div.gallery:hover {
+  opacity: 0.5;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style for body */
+h1 {
+ color: black;
+ font-family:brittany coast;
+ font-size: 200%;
+ background-color: #FFB6C1;
+ padding: 30px;
+ text-align:center;
+}
+    
+h2 {
+ color: black;
+ font-family:arial;
+}
+    
+p  {
+ color: #990443 ;
+ font-family:courier;
+}
+
+</style>
+</head>
+<body>
+
+<h1>GALLERY</h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="restoran.jpg">
+      <img src="restoran.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="raya1.jpg">
+      <img src="raya1.jpg" alt="Forest" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="raya2.jpg">
+      <img src="raya2.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="raya3.jpg">
+      <img src="raya3.jpg" alt="Mountains" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>
